@@ -23,12 +23,13 @@
 			</div>
 			<div formArrayName="hobbies">
 				<h3>Hobbies</h3>
-				<div class="form-group" *ngFor="let hobbyControl of getHobbies().controls; let i = index">
+				<div class="form-group d-flex" *ngFor="let hobbyControl of getHobbies().controls; let i = index">
 					<input type="text" class="form-control" [formControlName]="i">
+					<button class="btn btn-outline-danger ml-3" (click)="onDeleteHobby(i)">Supprimer</button>
 				</div>
-				<button type="button" class="btn btn-success" (click)="onAddHobby()">Ajouter un hobby</button>
+				<button type="button" class="btn btn-success my-2" (click)="onAddHobby()">Ajouter un hobby</button>
 			</div>
-			<button class="btn btn-primary" type="submit" [disabled]="userForm.invalid">Soumettre</button>
+			<button class="btn btn-primary my-2" type="submit" [disabled]="userForm.invalid">Soumettre</button>
 		</form>
 	</div>
 </div>

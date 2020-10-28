@@ -54,4 +54,8 @@ export class NewUserComponent implements OnInit {
     this.getHobbies().push(newHobbyControl);
   }
 
+  onDeleteHobby(index: number) {
+    this.getHobbies().removeAt(index);
+  }
+
 }

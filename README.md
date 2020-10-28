@@ -2,9 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
 
+Application to see your household electrical devices and manage their state (on or off). Add new devices, create users, render users.
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+`npm install` to get all the required packages
+`ng serve` to launch a dev server
+Navigate to `http://localhost:4200/`
 
 ## Code scaffolding
 
